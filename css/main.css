@@ -82,3 +82,52 @@ h1 {
     /* padding is the space inside an element, 
     it pushes content away from the edge */
 }
+/**********************************
+         MOBILE STYLES 
+************************************/
+/* styles anchor tags first(inside the nav only) */
+nav a {
+     /*make the anchor tags blocl elements (so they behave like divs  */
+display: block; 
+background-color:blanchedalmond;
+border-top: 2px solid black;
+border-bottom: 2px solid black;
+padding: 10px; 
+text-align:center; 
+/* remove the underline on the link */
+text-decoration: none;
+}
+/* hover for cursors, active for touchscreen */
+nav a:hover, nav a:active {
+    background-color: white;
+}
+
+/**********************************
+         MEDIA QUERIES 
+************************************/
+
+@media screen and (min-width: 720px) {
+   /* only apply these styles when the screen is 720px
+   width (minimum) or larger */
+   nav a {
+       float: left;
+       width: 25%;
+       /* use something called box-sizing
+       to make the border and padding not count toward 
+       thw width and height of the element */
+       box-sizing: border-box;
+
+   }
+   main {
+    /* so it sits under the floated stuff */
+    clear: both;
+   }
+}
+
+@media screen and (min-width: 900px) {
+    /* these styles only apply at 900px and above */
+   nav a { 
+    
+   }
+}
+/* fork the code pen for assignment */
