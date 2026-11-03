@@ -51,3 +51,34 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+
+/**********************************
+         MAIN STYLES 
+************************************/
+html {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    max-width: 900px;
+    background-color: yellowgreen;
+
+    /* center the site in the browser */
+    margin: 0 auto;
+
+    /* when you give margin two values, it means 
+        top-bottom
+        left-right; */
+
+}
+h1 {
+    font-size: 36px;
+    color:blue;
+    margin-bottom: 20px;
+    /* margin is the space outside the element, 
+    between other elements */
+    padding: 10px;
+    /* padding is the space inside an element, 
+    it pushes content away from the edge */
+}
